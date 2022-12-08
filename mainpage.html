@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="cust_registration.php">Customer Registration</a>
+  <a href="registration.php">Register</a>
+  <a href="donate.php">Donar</a>
+  <a href="email.php">Email</a>
+</div>
+
+<h1> DonateKart</h1>
+<p>Click on the Home to open the  menu.</p>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Home</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>  
+</body>
+</html> 
